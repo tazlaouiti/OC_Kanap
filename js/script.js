@@ -5,7 +5,7 @@ async function fetchItems() {
     return fetch(`http://localhost:3000/api/products`)
         .then(result => result.json())
         .then(ressourcesDataProducts => ressourcesDataProducts)
-        .catch(function (error) { console.log("fetch().catch error : ", error); window.alert("Bonjour, nos serveurs sont actuellement indisponibles, veuillez re-essayez ultérieurement, merci pour votre compréhension.") });
+        .catch(function (error) { console.log("fetch().catch error : ", error); window.alert("Bonjour, nos serveurs sont actuellement indisponibles, veuillez re-essayez ultérieurement, merci pour votre compréhension. Demarrer avec VSCode la partie serveur /back $ npm start") });
 }
 
 /*********************************************************************************/
