@@ -3,7 +3,7 @@ const Product = require('../models/Product');
 
 exports.getAllProducts = (req, res, next) => {
 	console.time('getAllProducts');
-	console.log(`Je debug !!! - getAllProducts`);
+	//console.log(`Je debug !!! - getAllProducts`);
 	
   Product.find().then(
     (products) => {
@@ -33,7 +33,7 @@ exports.getOneProduct = (req, res, next) => {
 	
 	
 	console.time('getOneProduct');
-	console.log(`Je debug !!! - getOneProduct`);
+	//console.log(`Je debug !!! - getOneProduct`);
   Product.findById(req.params.id).then(
     (product) => {
       if (!product) {
@@ -65,7 +65,7 @@ exports.getOneProduct = (req, res, next) => {
  */
 exports.orderProducts = (req, res, next) => {
 	console.time('orderProducts');
-	console.log(`Je debug !!! - orderProducts`);
+	//console.log(`Je debug !!! - orderProducts`);
   if (!req.body.contact ||
       !req.body.contact.firstName ||
       !req.body.contact.lastName ||
